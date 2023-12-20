@@ -1,0 +1,38 @@
+﻿    <!-- TEAM -->
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 d-flex justify-content-center align-itmes-center"
+                                            style="text-align: center;">
+                                            <span class="flag">
+                                                <img style="width: 40px; height: 40px" class="rounded-circle"
+                                                    src="@Row.team.crest"
+                                                    alt="">
+                                            </span>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>@Row.team.tla</b>
+                                            </h5>
+                                        </div>
+
+                                        <div class="col-sm-2" style="text-align: center;">
+                                            @Row.won
+                                        </div>
+
+                                        <div class="col-sm-2" style="text-align: center;">
+                                            @Row.draw
+                                        </div>
+
+                                        <div class="col-sm-2" style="text-align: center;">
+                                            @Row.lost
+                                        </div>
+
+                                        <div class="col-sm-2" style="text-align: center;">
+                                            <b>@Row.points</b>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--// TEAM //-->
+@code {
+    [Parameter]
+    public TableItemDto? Row {get; set;}
+}
